@@ -8,9 +8,9 @@
 #include "ObjectManager.h"
 #include "Camera.h"
 #include "Sound.h"
-#ifdef _DEBUG
-#pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
-#endif
+//#ifdef _DEBUG
+//#pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
+//#endif
 
 
 HINSTANCE g_hinst;
