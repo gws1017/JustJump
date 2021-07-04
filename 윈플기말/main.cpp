@@ -479,8 +479,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		if (Startbit) DeleteObject(Startbit);
 		if (Helpbit) DeleteObject(Helpbit);
 		for (int i = 0; i < 100; ++i)
-			if (hbitobj[i]) DeleteObject(hbitobj[i]);
-
+			if (hbitobj[i]) DeleteObject(hbitobj[i]);		
+		RemoveFontResourceA("font/Maplestory Bold.ttf");
+		RemoveFontResourceA("font/Maplestory Light.ttf");
 
 		PostQuitMessage(0);
 		return 0;
