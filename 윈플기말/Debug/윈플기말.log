@@ -1,4 +1,17 @@
-﻿  player.cpp
-C:\Users\sumin\Documents\GitHub\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\sumin\Documents\GitHub\JustJump\윈플기말\player.cpp(666,15): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  윈플기말.vcxproj -> C:\Users\sumin\Documents\GitHub\JustJump\Debug\윈플기말.exe
+﻿  Camera.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  Load.cpp
+  main.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  Map.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  object.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  ObjectManager.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  player.cpp
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.h(27,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\윈플기말\player.cpp(666,15): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Sound.cpp
+  코드를 생성하고 있습니다...
+  윈플기말.vcxproj -> C:\Users\sumin\Desktop\과제\넷겜용\jujump\JustJump\Debug\윈플기말.exe
