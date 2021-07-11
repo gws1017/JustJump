@@ -75,7 +75,7 @@ void MAP :: DrawBK(HDC& mem1dc, HDC& mem2dc, RECT& rectview)
 	
 	mem2dc = CreateCompatibleDC(mem1dc);
 	SelectObject(mem2dc, hbitbk);
-	FillRect(mem1dc, &rectview, RGB(0, 0, 0));
+	FillRect(mem1dc, &rectview,HBRUSH(RGB(0, 0, 0)));
 	if (mapnum == 9)
 	{
 		BitBlt(mem1dc, 0, 0, 3021, 768, mem2dc, ms, 0, SRCCOPY);

@@ -23,6 +23,9 @@ class PLAYER {
 	HBITMAP hbitex;		//점프,숙이기 줄타기 비트맵
 	int bx, by, bw, bh; //비트맵의 스프라이트위치를 바꾸기위한 좌표 변수
 public:
+	float falldy = 0;	//속도 제어
+	float GroundAccel = 0.68;	//중력가속도
+
 	PLAYER();
 	// 캐릭터위치 초기화 함수
 	void initPos();
