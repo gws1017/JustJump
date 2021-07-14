@@ -405,7 +405,6 @@ void PLAYER::PlayerSetting(WPARAM wParam, Sound& sound)
 		{
 			return;	//아무것도해주지않는다 현상태유지
 		}
-		falldy = 10;	//임시
 		if (state == 5 || state == 8)//줄에 매달렸을때
 		{
 			if (LRkey == 0)		//동시에 좌우키가 눌리지 않았으면서
@@ -422,6 +421,7 @@ void PLAYER::PlayerSetting(WPARAM wParam, Sound& sound)
 		{
 			FMOD_Channel_Stop(sound.Channel[1]);
 			FMOD_System_PlaySound(sound.System, sound.effectSound[0], NULL, 0, &sound.Channel[1]);
+			falldy = 10;	//임시
 			jumpcount++;
 			state = 2;
 			savey = y;
@@ -659,10 +659,13 @@ void PLAYER::move(int obj_t)
 			거기서 피격판정을 내버림 여기서는 어쨌든 y값만 조절해주면 된다는 점
 			하도 옛날에 짠 코드라 수정을 조금씩 해보려고함. 
 			*/
-			if (falldy > -10)	//물체는 최대낙하속력이 존재함 나는 -10으로 설정 -> define화 시켜도 될듯
+			if (falldy > -5)	//물체는 최대낙하속력이 존재함 나는 -10으로 설정 -> define화 시켜도 될듯
 				falldy -= GroundAccel;	//속력은 가속도에 의해 계속 변화된다.
 			if (falldy < 0)	//속력이 -가 되면 떨어지고있다는 점! 코드를 더럽게 짜서 state로 플레이어 상태를 변화시켜줘야 하는 불편함이 존재함				
+			{
+				std::cout << "ㅇㅇ";
 				state = 7;	//딱히 수정하진 않을듯? 어차피 1회용코드임
+			}
 			y -= falldy;
 		}
 
